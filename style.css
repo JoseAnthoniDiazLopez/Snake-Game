@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: green;
+}
+main{
+ width: 90%;
+ max-width: 50vh;
+ height: 90%;
+ display: grid;
+ grid-template-areas: "datos"
+                      "canva"
+                      "buttons";
+ grid-template-rows: 0.5fr 3fr 2fr;
+}   
+
+
+div:not(#contButtons){
+    place-items: center;
+}
+#contPoint{
+    display: grid;
+    grid-area: datos;
+}
+#contCanvas{
+    display: grid;
+    grid-area: canva;
+    gap: 10px;
+}
+
+#contButtons {
+    grid-area: buttons;
+    display: grid;
+    grid-template-areas: "arrizq arr arrder"
+                        "izq play der"
+                        "abaizq aba abader";
+    gap: 10px;
+     }
+
+
+canvas{
+    background-color: brown;
+}
+#btnArr {
+    grid-area: arr;
+}
+#btnIzq {
+    grid-area: izq;
+    
+}
+#btnCent {
+  grid-area: play;
+}
+#btnDer {
+    grid-area: der;
+}
+#btnAba {
+    grid-area: aba;
+}

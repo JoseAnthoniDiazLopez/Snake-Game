@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="contPoint">
+            <h2>Puntos: 0 </h2>
+        </div>
+        <div id="contCanvas">
+            <canvas></canvas>
+        </div>
+        <div id="contButtons">
+           <button id="btnArr" onclick="control(2)">Arr</button>
+           <button id="btnIzq" onclick="control(1)">Izq</button>
+           <button id="btnCent" onclick="play()">Play</button>
+           <button id="btnDer" onclick="control(3)">Der</button>
+           <button id="btnAba" onclick="control(4)">Aba</button>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
